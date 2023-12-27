@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stack>
+
+int main() {
+    std::stack<int> myStack;
+
+    // Push elements onto the stack
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
+
+    // Access top element
+    std::cout << "Top element: " << myStack.top() << std::endl;
+
+    // Pop elements from the stack
+    while (!myStack.empty()) {
+        std::cout << "Popping: " << myStack.top() << std::endl;
+        myStack.pop();
+    }
+
+    return 0;
+}
